@@ -4,6 +4,7 @@
 
 
 int foo(int n) {
+    /* Variable res is not initialized */
     int i, res;
 
     for (i=0; i < n; ++i)
@@ -14,6 +15,7 @@ int foo(int n) {
 
 
 int main() {
+    /* Variable n is not initialized */
     int n, m;
 
     m = foo(n);

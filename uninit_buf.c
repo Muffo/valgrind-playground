@@ -9,6 +9,7 @@ int main() {
     if (ptr == NULL)
         return 1;
 
+    /* Uninitialized memory is written to stdout */
     write(1, ptr, 1); 
 
     free(ptr);

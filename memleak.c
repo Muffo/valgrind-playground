@@ -12,7 +12,6 @@ int main() {
 
     memset(ptr, 0, BUF_SIZE);
 
-
+    /* Missing free() --> memory leak */
     return 0;
-
 }

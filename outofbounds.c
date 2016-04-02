@@ -10,10 +10,9 @@ int main() {
     if (ptr == NULL)
         return 1;
 
+    /* Set memory outside the buffer */
     memset(ptr, 0, BUF_SIZE+1);
-
     free(ptr);
 
     return 0;
-
 }
